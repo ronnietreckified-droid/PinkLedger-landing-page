@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PinkLedger — Boutique POS & Ledger</title>
+<meta name="description" content="Offline-first boutique management app for small clothing retailers. Track sales, stock, expenses, and profit from your phone." />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --pink: #FF1493;
+    --pink-dark: #DB2777;
+    --bg: #FDF8FA;
+    --surface: #FFFFFF;
+    --text: #1E1B2E;
+    --muted: #64748B;
+    --border: #FCE7F3;
+    --success: #10B981;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 640px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 40px 0 24px; text-align: center; }
+  .logo {
+    width: 72px; height: 72px; border-radius: 18px;
+    background: var(--pink);
+    display: inline-flex; align-items: center; justify-content: center;
+    color: white; font-weight: 900; font-size: 26px; letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
+  h1 .accent { color: var(--pink); }
+  .tagline { font-size: 15px; color: var(--muted); margin-bottom: 24px; }
+  .download-btn {
+    display: inline-block;
+    background: var(--pink);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 14px 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+  .download-btn:hover { background: var(--pink-dark); }
+  .download-btn.whatsapp { background: var(--success); }
+  .download-btn.whatsapp:hover { background: #059669; }
+  .download-meta { font-size: 12px; color: var(--muted); margin-top: 10px; }
+  .screenshot {
+    margin: 40px auto 0; max-width: 320px;
+    border-radius: 20px; overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  }
+  .screenshot img { width: 100%; display: block; }
+  .screenshot-placeholder {
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    background: var(--surface);
+  }
+  section { padding: 48px 0; border-top: 1px solid var(--border); }
+  h2 { font-size: 20px; font-weight: 700; margin-bottom: 16px; letter-spacing: -0.3px; }
+  .feature {
+    display: flex; gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .feature:last-child { border-bottom: none; }
+  .feature-icon {
+    width: 32px; height: 32px; border-radius: 8px;
+    background: var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; flex-shrink: 0;
+  }
+  .feature-body h3 { font-size: 15px; font-weight: 600; margin-bottom: 2px; }
+  .feature-body p { font-size: 14px; color: var(--muted); }
+  .requirements {
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 20px;
+    border: 1px solid var(--border);
+  }
+  .requirements p { font-size: 14px; color: var(--muted); margin-bottom: 6px; }
+  .requirements p:last-child { margin-bottom: 0; }
+  footer {
+    padding: 40px 0 60px; text-align: center;
+    font-size: 13px; color: var(--muted);
+    border-top: 1px solid var(--border);
+  }
+  footer a { color: var(--pink); text-decoration: none; font-weight: 600; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 480px) {
+    h1 { font-size: 26px; }
+    header { padding: 32px 0 20px; }
+    section { padding: 36px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">PL</div>
+    <h1><span class="accent">Pink</span>Ledger</h1>
+    <p class="tagline">Boutique POS & Ledger</p>
+
+    <a href="https://github.com/ronnietreckified-droid/Treck/releases/latest"
+       class="download-btn"
+       target="_blank"
+       rel="noopener">
+      Download for Android
+    </a>
+    <p class="download-meta">
+      Version 1.0 · ~8 MB · Android 7.0+
+    </p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="screenshot">
+    <img src="screenshot.png"
+         alt="PinkLedger dashboard"
+         onerror="this.parentNode.innerHTML='&lt;div class=&quot;screenshot-placeholder&quot;&gt;Add a screenshot&lt;br&gt;(save as screenshot.png next to this file)&lt;/div&gt;';" />
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <h2>What it does</h2>
+
+    <div class="feature">
+      <div class="feature-icon">📦</div>
+      <div class="feature-body">
+        <h3>Inventory & batches</h3>
+        <p>Track every garment by name, category, quality class, and supplier batch.</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">💳</div>
+      <div class="feature-body">
+        <h3>Sales & receipts</h3>
+        <p>Record a sale in seconds. Send a receipt on WhatsApp. Handle layaways and customer balances.</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">📊</div>
+      <div class="feature-body">
+        <h3>Profit & insights</h3>
+        <p>See today's revenue, net profit, slow movers, and which class actually makes you money.</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">🧾</div>
+      <div class="feature-body">
+        <h3>Expenses & Z-Report</h3>
+        <p>Log store costs, personal drawings, and outside capital. Close the day with a full cash reconciliation.</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">📶</div>
+      <div class="feature-body">
+        <h3>Works offline</h3>
+        <p>Every sale, expense, and update saves to your phone instantly. Syncs to the cloud when online.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Requirements</h2>
+    <div class="requirements">
+      <p>• Android 7.0 or newer</p>
+      <p>• ~8 MB storage</p>
+      <p>• No internet needed to use — only for cloud backup</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Get started</h2>
+    <p style="color: var(--muted); font-size: 15px; margin-bottom: 16px;">
+      PinkLedger is invite-only. If you run a boutique and want access, send a message.
+    </p>
+    <a href="https://wa.me/256783033462"
+       class="download-btn whatsapp"
+       target="_blank"
+       rel="noopener">
+      Request access on WhatsApp
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Built for Ugandan boutiques.</p>
+    <p style="margin-top: 8px;">
+      <a href="mailto:ronnietreck@gmail.com">ronnietreck@gmail.com</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+  </html>
